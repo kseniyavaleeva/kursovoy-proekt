@@ -1,0 +1,251 @@
+/*!
+ * html-area
+ * https://github.com/ericcornelissen/html-area
+ *
+ * Copyright 2016 Eric Cornelissen
+ * Released under the MIT license
+ * https://github.com/ericcornelissen/html-area/blob/master/LICENSE
+ *
+ * Date: 24.09.2016
+ */
+
+
+.result {
+    color: black;
+    background: white;
+    width: 100%;
+    border: 1px solid #a8d6fa;
+    box-shadow: 0 0 0 1px #2196F3;
+    overflow-y: scroll;
+    height: 200px;
+    padding-left: 6px;
+}
+/* Content */
+.blink .html-area__line.active::after {
+	border-right: 1px solid #000;
+	color: transparent;
+	content: attr(caret);
+	display: block;
+	height: 90%;
+	margin: 0 0 0 1px;
+	position: absolute;
+	top: 0;
+	transform: translate(0, 5%);
+}
+
+.html-area__content {
+	display: block;
+	flex-grow: 1;
+	outline: none;
+}
+.html-area__content:empty::before {
+	color: #BDBDBD;
+	content: attr(placeholder);
+}
+
+.html-area__gutter {
+	box-sizing: border-box;
+	cursor: default;
+	color: #888;
+	direction: rtl;
+	display: none;
+	flex-grow: 0;
+	font-size: 14px;
+	height: fit-content;
+	margin: 0;
+	min-height: 100%;
+	min-width: calc(.8em + 1ch);
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+.html-area__gutter, .html-area--linenumbers .html-area__content::after {
+	border-color: #DDD;
+	border-style: solid;
+	border-width: 0 1px 0 0;
+}
+
+.html-area__input {
+	border: 0;
+	height: 0;
+	margin: 0;
+	outline: none;
+	padding: 0;
+	pointer-events: none;
+	position: fixed;
+	width: 0;
+}
+
+.html-area__line, .html-area__content:empty::before {
+	box-sizing: content-box;
+	background-clip: padding-box;
+	border: 0;
+	cursor: text;
+	display: block;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.3em;
+	margin: 0;
+	min-height: 1.3em;
+	min-width: 1px;
+	padding: 0 5px;
+	position: relative;
+	white-space: nowrap;
+	word-break: normal;
+	word-wrap: normal;
+}
+h1.html-area__line {
+	font-size: 36px;
+}
+h2.html-area__line {
+	font-size: 32px;
+}
+h3.html-area__line {
+	font-size: 28px;
+}
+h4.html-area__line {
+	font-size: 24px;
+}
+h5.html-area__line {
+	font-size: 20px;
+}
+h6.html-area__line {
+	font-size: 16px;
+}
+p.html-area__line {
+	font-size: 14px;
+}
+
+.html-area__linenumber {
+	background-clip: padding-box;
+	display: block;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.3em;
+	margin: 0;
+	min-height: 1.3em;
+	padding: 0 .3em 0 .5em;
+	width: 100%;
+}
+h1.html-area__linenumber {
+	padding-top: calc((1.3 * 36px) - (1.3 * 14px));
+}
+h2.html-area__linenumber {
+	padding-top: calc((1.3 * 32px) - (1.3 * 14px));
+}
+h3.html-area__linenumber {
+	padding-top: calc((1.3 * 28px) - (1.3 * 14px));
+}
+h4.html-area__linenumber {
+	padding-top: calc((1.3 * 24px) - (1.3 * 14px));
+}
+h5.html-area__linenumber {
+	padding-top: calc((1.3 * 20px) - (1.3 * 14px));
+}
+h6.html-area__linenumber {
+	padding-top: calc((1.3 * 16px) - (1.3 * 14px));
+}
+
+/* Modifiers */
+.html-area--linenumbers .html-area__gutter {
+	display: block;
+}
+
+.html-area--rtl {
+	direction: rtl;
+}
+.html-area--rtl .html-area__gutter, .html-area--rtl .html-area__content::after {
+	border-width: 0 0 0 1px;
+	direction: ltr;
+}
+
+.html-area--scrollpastend .html-area__content::after {
+	content: "";
+	display: inline-block;
+	height: calc(100% - (1.3 * 14px));
+	width: 1px;
+}
+.html-area--scrollpastend.html-area--linenumbers .html-area__content::after {
+	margin: 0 0 0 -1px;
+	width: 0;
+}
+.html-area--scrollpastend.html-area--rtl .html-area__content::after {
+	margin: 0 -1px 0 0;
+}
+
+/* Themes */
+.html-area {
+    border-color: #2196F3;
+    -webkit-box-shadow: 0 0 4px #FF8C00;
+    -moz-box-shadow: 0 0 4px #FF8C00;
+    box-shadow: 0 0 4px #2196F3;
+}
+.html-area[focus=true] {
+	border-color: #FF8C00;
+	-webkit-box-shadow: 0 0 4px #FF8C00;
+	   -moz-box-shadow: 0 0 4px #FF8C00;
+	        box-shadow: 0 0 4px #FF8C00;
+}
+.html-area .blink .html-area__line.active::after {
+	border-color: #363636;
+}
+.html-area .html-area__gutter {
+	border-color: #E1DEDE;
+}
+.html-area .html-area__linenumber {
+	color: #363636;
+}
+
+.html-area-focus .html-area__line.active {
+	background-color: #E0E0E0;
+}
+.html-area-focus .html-area__line:not(.active) {
+	color: #BDBDBD;
+}
+.html-area-focus .html-area__linenumber.active {
+	color: #000;
+	background-color: #E0E0E0;
+}
+.html-area-focus .html-area__linenumber:not(.active) {
+	color: #BDBDBD;
+}
+
+.html-area-rainbow .html-area__line:nth-child(7n - 6) {
+	color: red;
+}
+.html-area-rainbow .html-area__line:nth-child(7n - 5) {
+	color: orange;
+}
+.html-area-rainbow .html-area__line:nth-child(7n - 4) {
+	color: yellow;
+}
+.html-area-rainbow .html-area__line:nth-child(7n - 3) {
+	color: green;
+}
+.html-area-rainbow .html-area__line:nth-child(7n - 2) {
+	color: blue;
+}
+.html-area-rainbow .html-area__line:nth-child(7n - 1) {
+	color: indigo;
+}
+.html-area-rainbow .html-area__line:nth-child(7n) {
+	color: violet;
+}
+.but{
+	text-align: center;
+}
+
+button, input[type=reset], input[type=submit] {
+    background: #2196f3;
+    border: 1px solid rgba(0,0,0,.12);
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    padding: 8px 16px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}

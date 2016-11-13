@@ -1,0 +1,13 @@
+Sara: - Good morning! Could I help you?
+James: - Hello! Yes, I would like to join the mathematics club, please.
+Sara:- Ok, I need some details about you. Introduce yourself, please!
+James:- Of course. My name is James Abramson, I’m 14 years old.
+Sara: - What’s your home address, James?
+James: - My parents work in Russia and now I live with my grandmother.
+Sara: - Ok, give me hers, please. I will bring it to list, because it could be important in case of emergency.
+James: - It’s 25 St. Victoria’s street, app.112, Bridgeport.
+Sara: - Perfect. I also need your phone number.
+James: - It’s 003 74708135
+Sara: - That’s it for now. Here’s your ID card. We’ll wait for you next Monday at 3.00 p.m.
+James: - Thank you very much. I’ll be here on time. Good bye.
+Sara: - Good bye. Have a nice day!  

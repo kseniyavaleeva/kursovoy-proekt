@@ -1,0 +1,79 @@
+html, body {
+			    background-color:#bc92ab;
+				background-image:-moz-linear-gradient(top,#ec9cb5,#75839d);
+				background-image:-webkit-gradient(linear,0 0,0 100%,from(#ec9cb5),to(#75839d));
+				background-image:-webkit-linear-gradient(top,#009688,rgba(0, 150, 136, 0));
+				 background-repeat: no-repeat;
+				 background-position: top;
+				font-family: 'Open Sans', sans-serif;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			h1 { margin: 0 0 5px 0; }
+			h4 { margin: 20px 0 5px 0; }
+			p { margin: 0; }
+
+			.html-area {
+				height: 200px;
+				margin: 20px 0;
+				padding-left: 6px;
+				width: 100%;
+				font-size: 15px;
+                font-family: 'Raleway', sans-serif;
+			}
+
+			.container {
+				height: 100%;
+				width: 100%;
+			}
+			.content {
+				box-sizing: border-box;
+				box-shadow: 0 0 3px 0 #DDD;
+				background-color: #FFF;
+				border: 1px solid #CCC;
+				border-bottom-width: 0px;
+				border-top-width: 0px;
+				margin: 0 auto;
+				max-width: 700px;
+				min-height: 100%;
+				min-width: 700px;
+				padding: 50px 50px;
+			}
+			.section:not(:last-of-type) {
+				border-bottom: 1px solid gray;
+				padding-bottom: 20px;
+			}
+
+			#export {
+				border-radius: 5px;
+				margin: 10px 0;
+				overflow: hidden;
+				white-space: nowrap;
+				width: 100%;
+			}
+			#export b {
+				background-color: #BDBDBD;
+				display: block;
+				padding: 3px 10px;
+			}
+			#export pre {
+				background-color: #F5F5F5;
+				border-bottom: 2px solid #E0E0E0;
+				line-height: 2em;
+				margin: 0;
+				overflow-x: auto;
+				overflow-y: hidden;
+				padding: 3px 10px;
+			}
+			#import {
+				display: block;
+				margin: 10px 0;
+				height: 3em;
+				width: 100%;
+			    border-color: #2196F3;
+                box-shadow: 0 0 4px #2196F3;
+                padding-left: 6px;
+                font-family: 'Raleway', sans-serif;
+                font-size: 15px;
+			}
