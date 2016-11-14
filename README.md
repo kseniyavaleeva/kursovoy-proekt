@@ -7,7 +7,7 @@
 2 область это уже поле переведенного текста. <br>
 Далее происходит оформление данного тэга textarea через CSS.
 Этап 2. Разработка самого словаря-переводчика.  <br>
-Я создания словаря-переводчика я решила использовать API YANDEX TRANSLATE. ссылка на документацию  <br> https://tech.yandex.ru/translate/doc/dg/concepts/About-docpage/  <br>
+Для создания словаря-переводчика я решила использовать API YANDEX TRANSLATE. ссылка на документацию  <br> https://tech.yandex.ru/translate/doc/dg/concepts/About-docpage/  <br>
 У данного API понятная документация а также видеоурок на youtube которого я придерживалась в разработке своего проекта  <br> https://www.youtube.com/watch?v=4bpjGMUXiJg  <br>
 Настройка и подключение данного API происходит через файл jstranslate.js.  <br>
 В определенном месте вписывается ключ для доступа к данному API.  <br>
