@@ -1,13 +1,3 @@
-/*!
- * html-area
- * https://github.com/ericcornelissen/html-area
- *
- * Copyright 2016 Eric Cornelissen
- * Released under the MIT license
- * https://github.com/ericcornelissen/html-area/blob/master/LICENSE
- *
- * Date: 24.09.2016
- */
 
 
 .result {
@@ -20,7 +10,7 @@
     height: 200px;
     padding-left: 6px;
 }
-/* Content */
+
 .blink .html-area__line.active::after {
 	border-right: 1px solid #000;
 	color: transparent;
@@ -147,7 +137,7 @@ h6.html-area__linenumber {
 	padding-top: calc((1.3 * 16px) - (1.3 * 14px));
 }
 
-/* Modifiers */
+
 .html-area--linenumbers .html-area__gutter {
 	display: block;
 }
@@ -174,7 +164,7 @@ h6.html-area__linenumber {
 	margin: 0 -1px 0 0;
 }
 
-/* Themes */
+
 .html-area {
     border-color: #2196F3;
     -webkit-box-shadow: 0 0 4px #FF8C00;
@@ -243,7 +233,7 @@ button, input[type=reset], input[type=submit] {
     color: #fff;
     cursor: pointer;
     display: inline-block;
-    margin: 0;
+    margin: 7px;
     padding: 8px 16px;
     text-align: center;
     vertical-align: middle;
